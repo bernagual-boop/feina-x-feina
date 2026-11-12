@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "FEINA X FEINA",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Feina X Feina",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "description": "Plataforma de feines, serveis i tasques a Mallorca.",
+  "lang": "ca"
+}
