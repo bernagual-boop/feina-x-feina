@@ -1,0 +1,6 @@
+{
+  "name": "MallorcaFeina - Servicios y Tareas en Mallorca",
+  "description": "Plataforma de servicios y tareas locales en Mallorca con geolocalización por municipios, presupuestos negociados, chat privado y pagos seguros en custodia.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
