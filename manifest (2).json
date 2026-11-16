@@ -1,13 +1,17 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
-  "display": "standalone",
   "name": "FEINA X FEINA",
-  "orientation": "portrait",
-  "scope": "/",
-  "short_name": "Feina X Feina",
+  "short_name": "Feina x Feina",
   "start_url": "/",
-  "theme_color": "#ffffff",
-  "description": "Plataforma de feines, serveis i tasques a Mallorca.",
-  "lang": "ca"
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://flaticon.com",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
