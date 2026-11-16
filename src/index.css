@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-display: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbars for chat and lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* iOS Safe Areas */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 16px);
+}
+
+/* Leaflet Map overrides for clean modern look */
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  padding: 4px !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+.leaflet-popup-content {
+  margin: 10px 12px !important;
+  line-height: 1.4 !important;
+}
+
+/* Dark mode Leaflet adjustments */
+.dark .leaflet-popup-content-wrapper {
+  background: #0f172a !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+.dark .leaflet-popup-tip {
+  background: #0f172a !important;
+}
+.dark .leaflet-container {
+  background: #020617 !important;
+}
+.dark .leaflet-tile {
+  filter: brightness(0.8) invert(1) contrast(1.2) hue-rotate(200deg) saturate(0.65);
+}
+
